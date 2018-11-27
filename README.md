@@ -1,9 +1,6 @@
 # IHM_Pham_Bolzonella
 School Project, Bolzonella Pham
-
-hello_world1
-
-Mercredi 21/11/18 installation egit
+Installation egit
 
  comment commit, merge,pull, créer une nouvelle branche 
 https://openclassrooms.com/fr/courses/1803496-egit-quand-git-s-invite-dans-eclipse
