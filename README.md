@@ -15,3 +15,5 @@ $sudo apt-get install openjfx
 
 clique droit sur le projet, propriété, ajouter un .jar externe, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar
 
+lier eclipse et scene builder : télécharger scene builder by "gluon", repérer l'endroit de l'exécutable, sur eclipse, window, pref, javaFX, locate exe file. 
+
