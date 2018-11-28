@@ -24,6 +24,7 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 		//cant u see this? 16:57
-		
+		// can u see this now ? 17:18
+		//where am i?
 	}
 }
