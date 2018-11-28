@@ -17,3 +17,4 @@ clique droit sur le projet, propriété, ajouter un .jar externe, /usr/lib/jvm/j
 
 lier eclipse et scene builder : télécharger scene builder by "gluon", repérer l'endroit de l'exécutable, sur eclipse, window, pref, javaFX, locate exe file. 
 
+edit on browser 17:55
