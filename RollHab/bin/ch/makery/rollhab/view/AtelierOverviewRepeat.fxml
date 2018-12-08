@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Group?>
-<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -16,11 +16,11 @@
             <Label layoutX="5.0" layoutY="5.0" text="Ecoutez et répétez." />
             <VBox layoutX="187.0" layoutY="25.0" prefHeight="195.0" prefWidth="221.0">
                <children>
-                  <Canvas height="180.0" width="219.0" />
+                  <ImageView fitHeight="180.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" />
                   <Group>
                      <children>
                         <ProgressBar layoutX="17.0" prefWidth="200.0" progress="0.0" />
-                        <Canvas height="16.0" layoutY="2.0" width="17.0" />
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" />
                      </children>
                   </Group>
                </children>
