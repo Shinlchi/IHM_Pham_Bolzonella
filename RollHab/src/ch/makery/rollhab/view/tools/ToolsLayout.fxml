@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+	<left>
+		<AnchorPane maxWidth="180.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button layoutX="5.0" layoutY="20.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" text="Verbes irréguliers" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+					<font>
+						<Font size="12.0" />
+					</font>
+				</Button>
+				<Button layoutX="5.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" text="Lexique des mots" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+					<font>
+						<Font size="12.0" />
+					</font>
+				</Button>
+				<Button layoutX="5.0" layoutY="180.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" text="Récapitulatif des temps" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+					<font>
+						<Font size="12.0" />
+					</font>
+				</Button>
+				<Separator layoutX="180.0" maxWidth="5.0" orientation="VERTICAL" prefHeight="360.0" AnchorPane.rightAnchor="0.0" />
+			</children>
+		</AnchorPane>
+	</left>
+	<center>
+		<BorderPane prefHeight="200.0" prefWidth="200.0" snapToPixel="false" BorderPane.alignment="CENTER" />
+	</center>
+</BorderPane>
