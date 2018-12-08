@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -9,7 +9,7 @@
    <children>
       <VBox alignment="TOP_CENTER" layoutX="77.0" layoutY="43.0" prefHeight="130.0" prefWidth="100.0" styleClass="context-menu" stylesheets="@DarkTheme.css" AnchorPane.leftAnchor="75.0">
          <children>
-            <Canvas height="110.0" width="130.0" />
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
             <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Label" textAlignment="CENTER" />
          </children>
       </VBox>
@@ -17,19 +17,19 @@
       <Label layoutX="5.0" layoutY="5.0" nodeOrientation="LEFT_TO_RIGHT" text="Trouvez l'image correspondant au mot." textAlignment="CENTER" />
       <VBox alignment="TOP_CENTER" layoutX="75.0" layoutY="199.0" prefHeight="130.0" prefWidth="100.0" styleClass="context-menu" stylesheets="@DarkTheme.css">
          <children>
-            <Canvas height="110.0" width="130.0" />
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
             <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Label" textAlignment="CENTER" />
          </children>
       </VBox>
       <VBox alignment="TOP_CENTER" layoutX="401.0" layoutY="43.0" prefHeight="130.0" prefWidth="100.0" styleClass="context-menu" stylesheets="@DarkTheme.css" AnchorPane.rightAnchor="75.0">
          <children>
-            <Canvas height="110.0" width="130.0" />
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
             <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Label" textAlignment="CENTER" />
          </children>
       </VBox>
       <VBox alignment="TOP_CENTER" layoutX="393.0" layoutY="199.0" prefHeight="130.0" prefWidth="100.0" styleClass="context-menu" stylesheets="@DarkTheme.css">
          <children>
-            <Canvas height="110.0" width="130.0" />
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
             <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Label" textAlignment="CENTER" />
          </children>
       </VBox>
