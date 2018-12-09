@@ -1,0 +1,48 @@
+
+.pane {
+    -fx-background-color: white;
+}
+
+.label-percent {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #394149;
+    -fx-opacity: 0.90;
+}
+
+.label-header {
+    -fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #4760A9;
+    -fx-font-weight:bold;
+    -fx-opacity: 0.90;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-test  {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.progress-indicator .track{
+	
+  -fx-control-inner-background: white;
+  -fx-border-radius:20;
+  -fx-background-radius:20;
+}
+.progress-bar .bar {
+    -fx-background-color:#D39307;
+    -fx-opacity: 0.8;
+    -fx-border-radius:20;
+  -fx-background-radius:20;
+}
+
+
