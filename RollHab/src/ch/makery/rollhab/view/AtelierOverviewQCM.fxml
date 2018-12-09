@@ -4,14 +4,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Quelle est la meilleur proposition ?" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
-      <Label layoutX="115.0" layoutY="84.0" text="Label" />
-      <Button layoutX="164.0" layoutY="190.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="164.0" layoutY="256.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="349.0" layoutY="190.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="349.0" layoutY="256.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="14.0" layoutY="14.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Quelle est la meilleur proposition ?" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Label layoutX="115.0" layoutY="84.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" />
+      <Button layoutX="164.0" layoutY="190.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
+      <Button layoutX="164.0" layoutY="256.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
+      <Button layoutX="349.0" layoutY="190.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
+      <Button layoutX="349.0" layoutY="256.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
    </children>
 </AnchorPane>
