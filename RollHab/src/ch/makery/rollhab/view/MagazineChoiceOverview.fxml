@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -12,28 +13,40 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="600.0">
                <children>
-                  <Pane layoutX="90.0" layoutY="50.0" prefHeight="100.0" prefWidth="150.0">
+                  <Pane layoutX="360.0" layoutY="50.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" layoutX="31.0" layoutY="42.0" prefHeight="16.0" prefWidth="89.0" text="Histoire" textAlignment="CENTER" />
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@resources/geo_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="38.0" styleClass="label-home-header" text="Géographie" />
                      </children>
                   </Pane>
-                  <Pane layoutX="360.0" layoutY="180.0" prefHeight="100.0" prefWidth="150.0">
+                  <Pane layoutX="88.0" layoutY="50.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" layoutX="31.0" layoutY="42.0" prefHeight="16.0" prefWidth="89.0" text="Culture" textAlignment="CENTER" />
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@resources/histoire_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="33.0" layoutY="38.0" styleClass="label-home-header" text="Histoire" />
                      </children>
                   </Pane>
-                  <Pane layoutX="90.0" layoutY="180.0" prefHeight="100.0" prefWidth="150.0">
+                  <Pane layoutX="88.0" layoutY="193.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" layoutX="31.0" layoutY="42.0" prefHeight="16.0" prefWidth="89.0" text="Politique" textAlignment="CENTER" />
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@resources/politique_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="28.0" layoutY="38.0" styleClass="label-home-header" text="Politique" />
                      </children>
                   </Pane>
-                  <Pane layoutX="360.0" layoutY="50.0" prefHeight="100.0" prefWidth="150.0">
+                  <Pane layoutX="360.0" layoutY="193.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label alignment="CENTER" layoutX="31.0" layoutY="42.0" prefHeight="16.0" prefWidth="89.0" text="Géographie" textAlignment="CENTER" />
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false" />
+                        <Label layoutX="35.0" layoutY="38.0" styleClass="label-home-header" text="Culture" />
                      </children>
                   </Pane>
                </children>
