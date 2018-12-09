@@ -6,21 +6,21 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="360.0" prefWidth="600.0" styleClass="background" stylesheets="@ToolsLayout.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
 	<left>
-		<AnchorPane maxWidth="180.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+		<AnchorPane maxWidth="180.0" styleClass="background" stylesheets="@ToolsLayout.css" BorderPane.alignment="CENTER">
 			<children>
-				<Button layoutX="5.0" layoutY="20.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" text="Verbes irréguliers" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+				<Button layoutX="5.0" layoutY="20.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" styleClass="shiny-orange" stylesheets="@ToolsLayout.css" text="Verbes irréguliers" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
 					<font>
 						<Font size="12.0" />
 					</font>
 				</Button>
-				<Button layoutX="5.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" text="Lexique des mots" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+				<Button layoutX="5.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" styleClass="shiny-orange" stylesheets="@ToolsLayout.css" text="Lexique des mots" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
 					<font>
 						<Font size="12.0" />
 					</font>
 				</Button>
-				<Button layoutX="5.0" layoutY="180.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" text="Récapitulatif des temps" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+				<Button layoutX="5.0" layoutY="180.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="170.0" styleClass="shiny-orange" stylesheets="@ToolsLayout.css" text="Table des temps" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
 					<font>
 						<Font size="12.0" />
 					</font>
@@ -30,6 +30,6 @@
 		</AnchorPane>
 	</left>
 	<center>
-		<BorderPane prefHeight="200.0" prefWidth="200.0" snapToPixel="false" BorderPane.alignment="CENTER" />
+		<BorderPane prefHeight="200.0" prefWidth="200.0" snapToPixel="false" styleClass="background" stylesheets="@ToolsLayout.css" BorderPane.alignment="CENTER" />
 	</center>
 </BorderPane>
