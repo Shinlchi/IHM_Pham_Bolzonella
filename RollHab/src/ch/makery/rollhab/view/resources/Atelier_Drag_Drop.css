@@ -11,7 +11,7 @@
 }
 
 .label-header{
-	-fx-font-size: 14pt;
+	-fx-font-size: 20pt;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: white;
     -fx-opacity: 0.95;
@@ -25,7 +25,7 @@
 }
 
 .label-home{
-	 -fx-font-size: 13pt;
+	 -fx-font-size: 11pt;
     -fx-font-family: "Segoe UI Semibold";
     -fx-text-fill: white;
     -fx-opacity: 1;
@@ -38,12 +38,19 @@
     -fx-text-fill: white;
     -fx-opacity: 1;
     -fx-effect:dropshadow( three-pass-box , rgba(1,1,1,1) , 5, 0.7 , 1 , 1 );
+}
+.label-home-detail{
+	 -fx-font-size: 8pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+    -fx-effect:dropshadow( three-pass-box , rgba(1,1,1,1) , 5, 0.7 , 1 , 1 );
     
 }
 .label-consigne {
-    -fx-font-size: 12pt;
+    -fx-font-size: 14pt;
     -fx-font-family: "Segoe UI Light";
-    -fx-font-weight:normal;
+    -fx-font-weight:bold;
     -fx-text-fill: #394149;
     -fx-opacity: 0.95;
 }
@@ -127,6 +134,7 @@
 .pane{
 -fx-border-width:3px;
 -fx-border-style: solid;
+-fx-background-color:white;
 -fx-border-color:white;
 -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 0, 0 );
 }
@@ -139,9 +147,7 @@
 }
 
 .anchor-tools{
-	-fx-background-color:white;
-	
-  -fx-background-border-radius: 10 10 0 0;
+-fx-background-color:white;
 -fx-border-width:3px;
 -fx-border-style: solid;
 -fx-border-color:white;
@@ -161,4 +167,25 @@
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
     -fx-background-color:white;
+}
+
+.paragraph{
+	-fx-background-color:white;
+-fx-border-width:3px;
+-fx-border-style: solid;
+-fx-border-color:white;
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+
+	
+}
+.paragraph > * {
+          -fx-font-size: 13.0px;
+          -fx-text-fill: black;
+          -fx-fill: black;
+          -fx-text-alignment:justify;
+ }
+ 
+.split-pane-divider {
+   -fx-background-color: transparent;
+    -fx-padding: 0 ;
 }

@@ -15,9 +15,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="360.0" prefWidth="600.0" stylesheets="@HomeAtelierOverview.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="360.0" prefWidth="600.0" stylesheets="@resources/HomeAtelierOverview.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
    <children>
-      <TabPane layoutX="64.0" layoutY="14.0" stylesheets="@HomeAtelierOverview.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TabPane layoutX="64.0" layoutY="14.0" stylesheets="@resources/HomeAtelierOverview.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
           <Tab closable="false" styleClass="background" text="Débutant">
             <content>
@@ -85,7 +85,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -195,10 +195,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -271,7 +271,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -381,10 +381,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -457,7 +457,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -567,10 +567,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -663,7 +663,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -773,10 +773,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -849,7 +849,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -959,10 +959,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -1035,7 +1035,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -1145,10 +1145,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -1241,7 +1241,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -1351,10 +1351,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -1427,7 +1427,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -1537,10 +1537,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>
@@ -1613,7 +1613,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -1723,10 +1723,10 @@
                                                                            </children>
                                                                         </GridPane>
                                                                         <Separator prefWidth="200.0" GridPane.rowIndex="4" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
                                                                      </children>
                                                                   </GridPane>
                                                                </center>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -9,14 +10,13 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-
-<AnchorPane prefHeight="360.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <SplitPane dividerPositions="0.22408026755852842" layoutX="142.0" layoutY="50.0" prefHeight="360.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.24166666666666667" layoutX="158.0" layoutY="49.0" prefHeight="348.0" prefWidth="600.0" styleClass="split-pane-divider" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <TableView layoutX="-26.0" layoutY="-37.0" prefHeight="358.0" prefWidth="132.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TableView prefHeight="358.0" prefWidth="140.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="Articles" />
                     </columns>
@@ -28,20 +28,25 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="179.0" layoutY="71.0" prefHeight="358.0" prefWidth="460.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="358.0" prefWidth="416.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="35.0" minHeight="0.0" minWidth="0.0" prefHeight="358.0" prefWidth="416.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <ImageView fitHeight="113.0" fitWidth="460.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                              <TextFlow layoutX="52.0" layoutY="104.0" prefHeight="245.0" prefWidth="391.0">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" />
-                                 </children>
-                              </TextFlow>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="25.0" layoutY="146.0" prefHeight="200.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <content>
+                                    <TextFlow prefHeight="198.0" prefWidth="380.0" styleClass="paragraph" stylesheets="@resources/Atelier_Drag_Drop.css">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="bla " />
+                                       </children>
+                                    </TextFlow>
+                                 </content>
+                              </ScrollPane>
+                              <Label alignment="CENTER" layoutX="151.0" layoutY="14.0" prefHeight="16.0" prefWidth="158.0" text="Label" textAlignment="CENTER" />
                            </children>
                         </AnchorPane>
-                    </content>
-                  </ScrollPane>
+                     </children>
+                  </AnchorPane>
                </children>
             </AnchorPane>
         </items>
