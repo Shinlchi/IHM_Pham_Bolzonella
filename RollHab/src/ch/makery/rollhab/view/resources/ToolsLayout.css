@@ -1,4 +1,10 @@
+.Pres_indicator{
+	-fx-cursor:hand;
+}
 
+.button{
+	-fx-cursor:hand;
+}
 
 .background {
     -fx-background-color: #F9FBFC;
@@ -29,6 +35,32 @@
     -fx-font-weight: bold;
     -fx-text-fill: white;
 }
+
+.shiny-orange_Magazine_In_use {
+    -fx-background-color: 
+        
+        linear-gradient(#5542AA 100%, #5542AA 100%, #5542AA 100%);
+       
+    -fx-background-radius: 16;
+    -fx-border-color : #4760A9;
+    -fx-border-radius: 16;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.shiny-orange_Magazine {
+    -fx-background-color: 
+        
+        linear-gradient(#ffffff 100%, #ffffff 100%, #ffffff 100%);
+       
+    -fx-background-radius: 16;
+    -fx-border-color : #4760A9;
+    -fx-border-radius: 16;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
 
 .button:focused {
     -fx-background-color: #5542AA;
@@ -245,7 +277,6 @@
 .scroll-bar:horizontal:focused {
  -fx-background-color: transparent,#f9fbfc,#f9fbfc;
 }
-
 
 
 

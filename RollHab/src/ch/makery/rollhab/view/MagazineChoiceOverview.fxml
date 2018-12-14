@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -7,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.MagazineChoiceOverviewController">
    <children>
       <ScrollPane hbarPolicy="NEVER" layoutX="212.0" layoutY="40.0" prefHeight="345.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
@@ -23,21 +24,25 @@
                         <Label layoutX="11.0" layoutY="38.0" styleClass="label-home-header" text="Géographie" />
                      </children>
                   </Pane>
-                  <Pane layoutX="88.0" layoutY="50.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
+                  <Pane layoutX="88.0" layoutY="50.0" onMouseClicked="#handleHistoire" prefHeight="104.0" prefWidth="154.0" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" onMouseClicked="#handleHistoire" opacity="0.9" pickOnBounds="true" smooth="false">
                            <image>
                               <Image url="@resources/histoire_icon.jpg" />
                            </image>
                         </ImageView>
                         <Label layoutX="33.0" layoutY="38.0" styleClass="label-home-header" text="Histoire" />
                      </children>
+                     <styleClass>
+                        <String fx:value="pane-home" />
+                        <String fx:value="Pres_indicator" />
+                     </styleClass>
                   </Pane>
                   <Pane layoutX="88.0" layoutY="193.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@resources/politique_icon.jpg" />
+                              <Image url="@resources/politique_icon.png" />
                            </image>
                         </ImageView>
                         <Label layoutX="28.0" layoutY="38.0" styleClass="label-home-header" text="Politique" />
@@ -45,7 +50,10 @@
                   </Pane>
                   <Pane layoutX="360.0" layoutY="193.0" prefHeight="104.0" prefWidth="154.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false" />
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@resources/culture_icon.jpg" />
+                           </image></ImageView>
                         <Label layoutX="35.0" layoutY="38.0" styleClass="label-home-header" text="Culture" />
                      </children>
                   </Pane>

@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="360.0" prefWidth="600.0" stylesheets="@resources/HomeAtelierOverview.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/HomeAtelierOverview.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.HomeAtelierOverviewController">
    <children>
       <TabPane layoutX="64.0" layoutY="14.0" stylesheets="@resources/HomeAtelierOverview.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -23,7 +23,7 @@
             <content>
               <AnchorPane>
                      <children>
-                        <ScrollPane fitToWidth="true" layoutX="130.0" layoutY="64.0" pannable="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="130.0" layoutY="64.0" pannable="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <content>
                             <AnchorPane prefHeight="327.0">
                                  <children>
@@ -31,7 +31,7 @@
                                       <panes>
                                         <TitledPane animated="false">
                                              <graphic>
-                                                <Label text="Se présenter" />
+                                                <Label text="Découverte" />
                                              </graphic>
                                              <content>
                                                 <ScrollPane fitToWidth="true">
@@ -78,14 +78,14 @@
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
                                                                               </Label>
-                                                                              <Label text="Label" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Le verbe Be" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="5.0" />
                                                                                  </GridPane.margin>
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" onMouseClicked="#handleAtelier" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -96,7 +96,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -123,7 +123,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -150,7 +150,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -177,7 +177,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -282,7 +282,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -309,7 +309,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -336,7 +336,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -363,7 +363,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -468,7 +468,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -495,7 +495,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -522,7 +522,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -549,7 +549,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -601,7 +601,7 @@
                <content>
                   <AnchorPane>
                      <children>
-                        <ScrollPane fitToWidth="true" pannable="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <content>
                               <AnchorPane prefHeight="327.0">
                                  <children>
@@ -663,7 +663,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" onMouseClicked="#handleAtelier" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -674,7 +674,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -701,7 +701,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -728,7 +728,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -755,7 +755,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -860,7 +860,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -887,7 +887,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -914,7 +914,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -941,7 +941,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1046,7 +1046,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1073,7 +1073,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1100,7 +1100,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1127,7 +1127,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1179,7 +1179,7 @@
                <content>
                   <AnchorPane>
                      <children>
-                        <ScrollPane fitToWidth="true" pannable="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <content>
                               <AnchorPane prefHeight="327.0">
                                  <children>
@@ -1241,7 +1241,7 @@
                                                                               </Label>
                                                                            </children>
                                                                         </GridPane>
-                                                                        <Button mnemonicParsing="false" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                                        <Button mnemonicParsing="false" onMouseClicked="#handleAtelier" styleClass="HomeAtelierOverviewButtonExercise" stylesheets="@resources/HomeAtelierOverview.css" text="Commencer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                                                         <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                            <columnConstraints>
                                                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" percentWidth="0.0" prefWidth="80.0" />
@@ -1252,7 +1252,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1279,7 +1279,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1306,7 +1306,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1333,7 +1333,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1438,7 +1438,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1465,7 +1465,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1492,7 +1492,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1519,7 +1519,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1624,7 +1624,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 2 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1651,7 +1651,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 3 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1678,7 +1678,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 4 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>
@@ -1705,7 +1705,7 @@
                                                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                                            </rowConstraints>
                                                                            <children>
-                                                                              <Label text="Leçon 1 :" underline="true" GridPane.valignment="BOTTOM">
+                                                                              <Label text="Leçon 5 :" underline="true" GridPane.valignment="BOTTOM">
                                                                                  <GridPane.margin>
                                                                                     <Insets left="10.0" />
                                                                                  </GridPane.margin>

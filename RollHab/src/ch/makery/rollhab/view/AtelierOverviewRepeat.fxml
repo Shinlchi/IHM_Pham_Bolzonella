@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewRepeatController">
    <children>
       <Label layoutX="5.0" layoutY="5.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Ecoutez et répétez." AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
       <VBox layoutX="30.0" layoutY="61.0" prefHeight="180.0" prefWidth="200.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css">
@@ -40,8 +41,8 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <ProgressBar prefWidth="150.0" progress="0.11" stylesheets="@resources/AtelierLayout.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                        <ProgressBar prefWidth="150.0" progress="0.2" stylesheets="@resources/AtelierLayout.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" styleClass="Pres_indicator">
                            <image>
                               <Image url="@resources/sound_icon.png" />
                            </image>
@@ -61,10 +62,128 @@
       <AnchorPane layoutX="262.0" layoutY="94.0" prefHeight="115.0" prefWidth="324.0" styleClass="anchor-tools">
          <children>
             <Label layoutX="5.0" layoutY="5.0" stylesheets="@resources/Atelier_Drag_Drop.css" text="Exemple :" />
-            <Label layoutX="30.0" layoutY="33.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="I am taking a walk with my dog." />
-            <Label layoutX="30.0" layoutY="65.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Je me promène avec mon chien." />
+            <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <GridPane maxWidth="600.0" prefWidth="400.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints fillWidth="false" halignment="CENTER" minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="I" />
+                        <Label text="am" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="Label_indicator" stylesheets="@resources/Atelier_Trad.css" text="taking" GridPane.columnIndex="2">
+                           <padding>
+                              <Insets left="2.0" right="2.0" />
+                           </padding>
+                        </Label>
+                        <Label text="a" GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="walk" GridPane.columnIndex="4">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="with" GridPane.columnIndex="5">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="my" GridPane.columnIndex="6">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="Label_indicator" stylesheets="@resources/Atelier_Trad.css" text="dog" GridPane.columnIndex="7">
+                           <GridPane.margin>
+                              <Insets left="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="." GridPane.columnIndex="8">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets left="-2.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <GridPane maxWidth="600.0" prefWidth="400.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints fillWidth="false" halignment="CENTER" minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Je" />
+                        <Label text="me" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="Label_indicator" stylesheets="@resources/Atelier_Trad.css" text="promène" GridPane.columnIndex="2">
+                           <padding>
+                              <Insets left="2.0" right="2.0" />
+                           </padding>
+                        </Label>
+                        <Label text="avec" GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="mon" GridPane.columnIndex="4">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="Label_indicator" stylesheets="@resources/Atelier_Trad.css" text="chien" GridPane.columnIndex="5">
+                           <GridPane.margin>
+                              <Insets left="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="." GridPane.columnIndex="6">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets left="-2.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
-      <Button layoutX="487.0" layoutY="300.0" mnemonicParsing="false" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <Button layoutX="487.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#handleContinuer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
    </children>
 </AnchorPane>

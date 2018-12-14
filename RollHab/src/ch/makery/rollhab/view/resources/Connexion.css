@@ -1,5 +1,6 @@
-
-
+.Pres_indicator{
+	-fx-cursor:hand;
+}
 .tab-pane .tab-header-area .tab-header-background {
     -fx-opacity: 0;
 }

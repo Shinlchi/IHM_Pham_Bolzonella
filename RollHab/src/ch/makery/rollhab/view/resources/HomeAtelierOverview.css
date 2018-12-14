@@ -1,4 +1,9 @@
-
+.Pres_indicator{
+	-fx-cursor:hand;
+}
+.button{
+	-fx-cursor:hand;
+}
 
 .background {
     -fx-background-color: #F9FBFC;

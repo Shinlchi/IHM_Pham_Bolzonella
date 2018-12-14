@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import java.lang.String?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.TilePane?>
 
-<AnchorPane prefHeight="52.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="52.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.HomeLayoutController">
    <children>
       <GridPane styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -22,17 +19,29 @@
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="70.0" />
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="60.0" />
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="80.0" />
-            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="155.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="145.0" />
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="90.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#handleAtelier" prefHeight="40.0" prefWidth="58.0" styleClass="label-menu" text="Atelier" textAlignment="CENTER" GridPane.columnIndex="1" />
-            <Label alignment="CENTER" onMouseClicked="#handleToolsVerbes" prefHeight="40.0" prefWidth="52.0" styleClass="label-menu" text="Outils" GridPane.columnIndex="2" GridPane.halignment="LEFT" />
-            <Label alignment="CENTER" onMouseClicked="#handleMagazine" prefHeight="40.0" prefWidth="81.0" styleClass="label-menu" text="Magazine" GridPane.columnIndex="3" GridPane.halignment="LEFT" />
-            <MenuButton mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" styleClass="graphic" GridPane.columnIndex="4">
+            <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#handleAtelier" prefHeight="40.0" prefWidth="58.0" text="Atelier" textAlignment="CENTER" GridPane.columnIndex="1">
+               <styleClass>
+                  <String fx:value="label-menu" />
+                  <String fx:value="Pres_indicator" />
+               </styleClass></Label>
+            <Label alignment="CENTER" onMouseClicked="#handleOutils" prefHeight="40.0" prefWidth="52.0" text="Outils" GridPane.columnIndex="2" GridPane.halignment="LEFT">
+               <styleClass>
+                  <String fx:value="label-menu" />
+                  <String fx:value="Pres_indicator" />
+               </styleClass></Label>
+            <Label alignment="CENTER" onMouseClicked="#handleMagazine" prefHeight="40.0" prefWidth="81.0" text="Magazine" GridPane.columnIndex="3" GridPane.halignment="LEFT">
+               <styleClass>
+                  <String fx:value="label-menu" />
+                  <String fx:value="Pres_indicator" />
+               </styleClass></Label>
+            <MenuButton mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" GridPane.columnIndex="4">
                <items>
                   <MenuItem mnemonicParsing="false" text="Allemand">
                      <graphic>
@@ -60,69 +69,25 @@
                      </image>
                   </ImageView>
                </graphic>
+               <styleClass>
+                  <String fx:value="graphic" />
+                  <String fx:value="Pres_indicator" />
+               </styleClass>
             </MenuButton>
-            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="119.0" text="Utilisateur" GridPane.columnIndex="5" GridPane.halignment="RIGHT">
+            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" styleClass="Pres_indicator" text="Utilisateur" GridPane.columnIndex="5" GridPane.halignment="RIGHT">
                <items>
+                  <MenuItem mnemonicParsing="false" text="Daniel" />
                   <MenuItem mnemonicParsing="false" text="Guillaume" />
-                  <MenuItem mnemonicParsing="false" text="Jérémi" />
+                  <MenuItem mnemonicParsing="false" text="Mathieu" />
+                  <MenuItem mnemonicParsing="false" text="Sophie" />
                </items>
             </MenuButton>
-            <ImageView fitHeight="40.0" fitWidth="118.0" onMouseClicked="#handleUser" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <ImageView fitHeight="40.0" fitWidth="118.0" onMouseClicked="#handleAcceuil" pickOnBounds="true" preserveRatio="true" styleClass="Pres_indicator" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@resources/icone_home.png" />
                </image>
             </ImageView>
          </children>
       </GridPane>
-      <Pane styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ToolBar prefHeight="52.0" prefWidth="600.0" styleClass="toolbar" stylesheets="@resources/Atelier_Drag_Drop.css">
-               <items>
-                  <Pane>
-                     <children>
-                        <ImageView fitHeight="40.0" fitWidth="118.0" onMouseClicked="#handleUser" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@resources/icone_home.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <TilePane prefHeight="40.0" prefWidth="59.0">
-                     <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#handleAtelier" prefHeight="40.0" prefWidth="62.0" styleClass="label-menu" text="Atelier" textAlignment="CENTER" />
-                     </children>
-                     <padding>
-                        <Insets left="10.0" />
-                     </padding>
-                  </TilePane>
-                  <Label alignment="CENTER" onMouseClicked="#handleToolsVerbes" prefHeight="40.0" prefWidth="52.0" styleClass="label-menu" text="Outils" />
-                  <Label alignment="CENTER" onMouseClicked="#handleMagazine" prefHeight="40.0" prefWidth="81.0" styleClass="label-menu" text="Magazine" />
-                  <Pane prefHeight="40.0" prefWidth="220.0">
-                     <children>
-                        <MenuButton layoutX="56.0" layoutY="3.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="63.0" styleClass="graphic">
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                              <MenuItem mnemonicParsing="false" text="Action 2" />
-                           </items>
-                           <graphic>
-                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@resources/icone_anglais.jpg" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </MenuButton>
-                        <MenuButton layoutX="110.0" layoutY="5.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="119.0" text="Utilisateur">
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="Guillaume" />
-                              <MenuItem mnemonicParsing="false" text="Jérémi" />
-                           </items>
-                        </MenuButton>
-                     </children>
-                  </Pane>
-               </items>
-            </ToolBar>
-         </children>
-      </Pane>
    </children>
 </AnchorPane>

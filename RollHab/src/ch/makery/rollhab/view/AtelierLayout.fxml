@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="52.0" prefWidth="600.0" styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="52.0" prefWidth="600.0" styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierLayoutController">
    <children>
       <GridPane layoutX="6.0" layoutY="6.0" prefHeight="52.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columnConstraints>
@@ -24,13 +24,13 @@
             <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label onMouseClicked="#handleUser" text="Retour" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
-                  <ImageView fitHeight="22.0" fitWidth="22.0" onMouseClicked="#handleUser" pickOnBounds="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+            <Label onMouseClicked="#handleRetour" styleClass="Pres_indicator" text="Retour" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
+                  <ImageView fitHeight="22.0" fitWidth="22.0" onMouseClicked="#handleRetour" pickOnBounds="true" styleClass="Pres_indicator" GridPane.columnIndex="3" GridPane.halignment="CENTER">
                <image>
                   <Image url="@resources/return.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="40.0" fitWidth="118.0" onMouseClicked="#handleUser" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <ImageView fitHeight="40.0" fitWidth="118.0" onMouseClicked="#handleAcceuil" pickOnBounds="true" preserveRatio="true" styleClass="Pres_indicator" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <image>
                   <Image url="@resources/icone_home.png" />
                </image>

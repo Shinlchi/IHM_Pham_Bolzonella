@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="348.0" maxWidth="600.0" prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewEndController">
+   <children>
+      <GridPane layoutY="230.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#handleTerminerAcceuil" prefWidth="142.0" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Retour Acceuil" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#handleTerminerAtelier" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Retour Choix leçon" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <TextArea layoutX="109.0" layoutY="69.0" prefHeight="96.0" prefWidth="382.0" styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" text="Félicitation vous venez de&#10;        finir cette leçon" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="109.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+.Pres_indicator{
+	-fx-cursor:hand;
+}
+.Label_indicator{
+	-fx-text-fill: #5542AA;
+	-fx-font-weight:bold;
+}
+
+.separator *.line {
+    -fx-border-style:solid;
+    -fx-border-width: 0 0 1 0; /* its make really one-pixel-border */
+    -fx-border-color: black;
+}
+
+.button-lecon{
+    -fx-background-color: #5542AA;
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 6, 0.0 , 0.5 , 1 );
+    -fx-text-alignment: center;
+}
+
+.button_label_for_mouve{
+	-fx-text-fill: white;
+}
+
+.button-QCM{
+    -fx-background-color: #5542AA;
+    -fx-background-radius: 4;
+    -fx-min-height: 35px;
+    -fx-min-width: 90px;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 6, 0.0 , 0.5 , 1 );
+    -fx-text-alignment: center;
+}
+
+.label_QCM{
+	/*-fx-font-weight:bold;*/
+	-fx-font-size: 14pt;
+	
+}
+
+.label_confirmation_QCM_yes:pressed {
+    -fx-background-color: #1cb61d;
+    -fx-text-fill: white;
+
+    
+}
+
+.label_confirmation_QCM_no:pressed {
+    -fx-background-color: #ff2727;
+    -fx-text-fill: white;
+    
+}
+
+.label_confirmation_DragDrop_yes:pressed {
+    -fx-background-color: #1cb61d;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    
+}
+
+.label_confirmation_DragDrop_no:pressed {
+    -fx-background-color: #ff2727;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    
+}
+
+

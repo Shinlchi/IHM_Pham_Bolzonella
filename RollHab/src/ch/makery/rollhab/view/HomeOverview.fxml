@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
@@ -8,21 +9,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.HomeOverviewController">
    <children>
       <Pane layoutY="52.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane layoutX="28.0" layoutY="12.0" onMouseClicked="#handleAtelier" prefHeight="204.0" prefWidth="284.0" styleClass="pane-home" stylesheets="@resources/Atelier_Drag_Drop.css">
+            <Pane layoutX="28.0" layoutY="12.0" onMouseClicked="#handleAtelier" prefHeight="204.0" prefWidth="284.0" stylesheets="@resources/Atelier_Drag_Drop.css">
                <children>
-                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="2.0" layoutY="2.0" onMouseClicked="#handleAtelier" opacity="0.9" pickOnBounds="true" smooth="false">
+                  <ImageView fitHeight="200.0" fitWidth="280.0" layoutX="2.0" layoutY="2.0" opacity="0.9" pickOnBounds="true" smooth="false">
                      <image>
                         <Image url="@resources/image_lecon1.jpg" />
                      </image>
                   </ImageView>
                   <Label layoutX="16.0" layoutY="11.0" styleClass="label-home-header" text="Partie 1 " />
-                  <Label layoutX="16.0" layoutY="100.0" styleClass="label-home-detail" text="Le verbe &quot;be&quot;" />
-                  <Label layoutX="16.0" layoutY="53.0" styleClass="label-home" text="Se présenter" />
+                  <Label fx:id="lastNameColumn" layoutX="16.0" layoutY="100.0" styleClass="label-home-detail" text="Le verbe &quot;be&quot;" />
+                  <Label fx:id="firstNameColumn" layoutX="16.0" layoutY="53.0" styleClass="label-home" text="Découverte" />
                </children>
+               <styleClass>
+                  <String fx:value="pane-home" />
+                  <String fx:value="Pres_indicator" />
+               </styleClass>
             </Pane>
             <Pane layoutX="335.0" layoutY="19.0" prefHeight="200.0" prefWidth="230.0">
                <children>
@@ -30,28 +35,36 @@
                   <Label layoutX="57.0" styleClass="label-bold" stylesheets="@resources/Atelier_Drag_Drop.css" text="1" />
                   <Label layoutY="42.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Leçon terminée" />
                   <Label layoutX="123.0" layoutY="42.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="2/6" />
-                  <ProgressBar layoutX="1.0" layoutY="79.0" prefHeight="20.0" prefWidth="225.0" progress="0.2" styleClass="progress-indicator" stylesheets="@resources/AtelierLayout.css" />
+                  <ProgressBar layoutX="1.0" layoutY="79.0" prefHeight="20.0" prefWidth="225.0" progress="0.35" styleClass="progress-indicator" stylesheets="@resources/AtelierLayout.css" />
                   <Label layoutY="111.0" prefHeight="19.0" prefWidth="200.0" stylesheets="@resources/Atelier_Drag_Drop.css" text="Progression leçon en cours" />
                   <Label layoutX="193.0" layoutY="111.0" styleClass="label-percent" stylesheets="@resources/AtelierLayout.css" text="35%" />
-                  <Button layoutX="100.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#handleToutesLesLecon" styleClass="button-lecon" stylesheets="@resources/Atelier_Drag_Drop.css" text="Toutes les leçons" />
+                  <Button layoutX="100.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#handleToutesLesLecon" stylesheets="@resources/Atelier_Drag_Drop.css" text="Toutes les leçons">
+                     <styleClass>
+                        <String fx:value="button-lecon" />
+                        <String fx:value="Pres_indicator" />
+                     </styleClass></Button>
                </children>
             </Pane>
             <AnchorPane layoutX="28.0" layoutY="238.0" prefHeight="94.0" prefWidth="316.0" styleClass="anchor-tools" stylesheets="@resources/Atelier_Drag_Drop.css">
                <children>
-                  <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="14.0" layoutY="26.0" onMouseClicked="#handleToolsVerbes" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="14.0" layoutY="26.0" onMouseClicked="#handleToolsTemps" pickOnBounds="true" preserveRatio="true" styleClass="Pres_indicator">
                      <image>
                         <Image url="@resources/Tools_Book.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="22.0" layoutY="5.0" onMouseClicked="#handleToolsVerbes" styleClass="label-bold" stylesheets="@resources/Atelier_Drag_Drop.css" text="Outils " />
-                  <Label layoutX="100.0" layoutY="38.0" onMouseClicked="#handleToolsTemps" text="Temps" AnchorPane.bottomAnchor="36.0" AnchorPane.topAnchor="36.0" />
-                  <Label layoutX="165.0" layoutY="38.0" onMouseClicked="#handleToolsVerbes" text="Verbe" AnchorPane.bottomAnchor="36.0" AnchorPane.topAnchor="36.0" />
-                  <Label layoutX="227.0" layoutY="38.0" onMouseClicked="#handleToolsLexique" text="Lexique" AnchorPane.bottomAnchor="36.0" AnchorPane.topAnchor="36.0" />
+                  <Label layoutX="22.0" layoutY="5.0" onMouseClicked="#handleToolsVerbes" stylesheets="@resources/Atelier_Drag_Drop.css" text="Outils ">
+                     <styleClass>
+                        <String fx:value="label-bold" />
+                        <String fx:value="Pres_indicator" />
+                     </styleClass></Label>
+                  <Label layoutX="100.0" layoutY="38.0" onMouseClicked="#handleToolsTemps" styleClass="Pres_indicator" text="Temps" AnchorPane.bottomAnchor="36.0" AnchorPane.topAnchor="36.0" />
+                  <Label layoutX="165.0" layoutY="38.0" onMouseClicked="#handleToolsVerbes" styleClass="Pres_indicator" text="Verbe" AnchorPane.bottomAnchor="36.0" AnchorPane.topAnchor="36.0" />
+                  <Label layoutX="227.0" layoutY="38.0" onMouseClicked="#handleToolsLexique" styleClass="Pres_indicator" text="Lexique" AnchorPane.bottomAnchor="36.0" AnchorPane.topAnchor="36.0" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="375.0" layoutY="238.0" prefHeight="94.0" prefWidth="190.0" styleClass="anchor-tools" stylesheets="@resources/Atelier_Drag_Drop.css">
                <children>
-                  <Label layoutX="10.0" styleClass="label-bold" stylesheets="@resources/Atelier_Drag_Drop.css" text="Suivi des progrès" />
+                  <Label layoutX="14.0" layoutY="5.0" styleClass="label-bold" stylesheets="@resources/Atelier_Drag_Drop.css" text="Suivi des progrès" />
                   <Label layoutX="39.0" layoutY="39.0" text="work in progress" />
                </children>
             </AnchorPane>

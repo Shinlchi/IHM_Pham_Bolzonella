@@ -1,4 +1,6 @@
-
+.Pres_indicator{
+	-fx-cursor:hand;
+}
 .pane {
     -fx-background-color: white;
 }

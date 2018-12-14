@@ -12,11 +12,11 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.MagazineOverviewController">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.MagazineOverviewControllerSecond">
    <children>
       <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label alignment="CENTER" layoutY="-1.0" prefHeight="51.0" prefWidth="480.0" text="Europe Castle" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="51.0" prefWidth="480.0" styleClass="Label_indicator" text="Unification against the viking" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font size="16.0" />
                </font>
@@ -25,16 +25,16 @@
               <content>
                 <AnchorPane prefHeight="500.0">
                      <children>
-                        <ImageView fitHeight="120.0" fitWidth="462.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <ImageView fitHeight="120.0" fitWidth="462.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <image>
-                              <Image url="@resources/history_img.jpg" />
+                              <Image url="@resources/Image_Invasion_Viking.jpg" />
                            </image>
                         </ImageView>
                         <AnchorPane layoutX="40.0" layoutY="120.0" maxWidth="480.0" prefWidth="480.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="145.0">
                            <children>
                               <TextFlow prefHeight="16.0" prefWidth="420.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Text lineSpacing="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="         In western Europe the castle developed rapidly from the 9th century. Fortifications built in France in the 10th century often included a high mound encircled by a ditch and surmounted by the leader is particular stronghold, as in the castles at Blois and Saumur. Later, one or more baileys or wards (grounds between encircling walls) were enclosed at the foot of the mound. During the 11th century this type of private fortress, known as the motte  and bailey castle, spread throughout western Europe. The thickness of castle walls varied according to the natural strength of the sites they occupied, often diverging greatly at different points of the site. ">
+                                    <Text lineSpacing="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="         From 793 (raid against the monastery of Lindisfarne), the Vikings plunder the English coast. At the same time, the Anglo-Saxon kingdoms were unified by Egbert de Wessex around 823-829. But the Danes settled throughout the south-east of England (taken from York, 866), from London to the Mersey estuary (Danelaw). King Alfred the Great (871-899) manages to stop them (Battle of Edington, 878, taken from London, 885), but must recognize them as the dominion of Danelaw (part of England north of a line which goes from London to Chester). The reconquest was completed (917-927) by his son Edward the Elder and his grandson Athelstan, who then won in 937 an important victory (Battle of Brunanburh) against the Scots and Danes Dublin. Their successors must still repel attacks, before England finds peace under the reign of Edgar the Pacific (959-975).">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -51,22 +51,22 @@
       </AnchorPane>
       <AnchorPane maxWidth="120.0" minWidth="120.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutX="5.0" layoutY="28.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" stylesheets="@resources/ToolsLayout.css" text="Europe Castle" AnchorPane.topAnchor="15.0">
+            <Button layoutX="5.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#handleHistoire" prefHeight="35.0" prefWidth="110.0" stylesheets="@resources/ToolsLayout.css" text="Europe Castle" AnchorPane.topAnchor="15.0">
                <font>
                   <Font size="11.0" />
                </font>
                <styleClass>
                   <String fx:value="Pres_indicator" />
-                  <String fx:value="shiny-orange_Magazine_In_use" />
+                  <String fx:value="shiny-orange_Magazine" />
                </styleClass>
             </Button>
-            <Button layoutX="5.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#handleHistoireSecond" prefHeight="35.0" prefWidth="110.0" stylesheets="@resources/ToolsLayout.css" text="Viking" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="65.0">
+            <Button layoutX="5.0" layoutY="61.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" stylesheets="@resources/ToolsLayout.css" text="Viking" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="65.0">
                <font>
                   <Font size="12.0" />
                </font>
                <styleClass>
                   <String fx:value="Pres_indicator" />
-                  <String fx:value="shiny-orange_Magazine" />
+                  <String fx:value="shiny-orange_Magazine_In_use" />
                </styleClass>
             </Button>
             <Separator layoutX="120.0" maxWidth="5.0" orientation="VERTICAL" prefHeight="348.0" prefWidth="0.0" />

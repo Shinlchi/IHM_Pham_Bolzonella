@@ -1,42 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="350.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewDragDropController">
    <children>
-      <Pane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Label layoutX="0.046875" nodeOrientation="LEFT_TO_RIGHT" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Trouvez l'image correspondant au mot." textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button fx:id="button" mnemonicParsing="false" onMouseDragged="#dragging" onMousePressed="#handle" styleClass="button-lecon" stylesheets="@resources/Atelier_Trad.css" AnchorPane.leftAnchor="247.0" AnchorPane.topAnchor="170.0">
+         <graphic>
+            <Label stylesheets="@resources/Atelier_Trad.css" text="walk">
+               <styleClass>
+                  <String fx:value="button_label_for_mouve" />
+                  <String fx:value="Pres_indicator" />
+               </styleClass></Label>
+         </graphic>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="70.046875" layoutY="38.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="50.0">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="70.046875" layoutY="38.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css">
-               <children>
-                  <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" textAlignment="CENTER" />
-               </children>
-            </VBox>
-            <Label layoutX="277.046875" layoutY="175.0" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" />
-            <Label layoutX="0.046875" nodeOrientation="LEFT_TO_RIGHT" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Trouvez l'image correspondant au mot." textAlignment="CENTER" />
-            <VBox alignment="TOP_CENTER" layoutX="70.046875" layoutY="194.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@DarkTheme.css">
-               <children>
-                  <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" textAlignment="CENTER" />
-               </children>
-            </VBox>
-            <VBox alignment="TOP_CENTER" layoutX="388.046875" layoutY="38.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@DarkTheme.css">
-               <children>
-                  <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" textAlignment="CENTER" />
-               </children>
-            </VBox>
-            <VBox alignment="TOP_CENTER" layoutX="388.046875" layoutY="194.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css">
-               <children>
-                  <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" textAlignment="CENTER" />
-               </children>
-            </VBox>
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true">
+               <image>
+                  <Image url="@resources/sauter_dragdrop.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Sauter" textAlignment="CENTER">
+               <stylesheets>
+                  <URL value="@resources/Atelier_Drag_Drop.css" />
+                  <URL value="@resources/Atelier_Trad.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="label-bright" />
+                  <String fx:value="Pres_indicator" />
+                  <String fx:value="label_confirmation_DragDrop_no" />
+               </styleClass>
+            </Label>
          </children>
-      </Pane>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="70.046875" layoutY="194.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true">
+               <image>
+                  <Image url="@resources/marcher_dragdrop.jpg" />
+               </image></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Marcher" textAlignment="CENTER">
+               <stylesheets>
+                  <URL value="@resources/Atelier_Drag_Drop.css" />
+                  <URL value="@resources/Atelier_Trad.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="label-bright" />
+                  <String fx:value="Pres_indicator" />
+                  <String fx:value="label_confirmation_DragDrop_yes" />
+               </styleClass>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="388.046875" layoutY="38.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true" styleClass="vbox">
+               <image>
+                  <Image url="@resources/courir_draggrop.png" />
+               </image></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Courir" textAlignment="CENTER">
+               <stylesheets>
+                  <URL value="@resources/Atelier_Drag_Drop.css" />
+                  <URL value="@resources/Atelier_Trad.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="label-bright" />
+                  <String fx:value="Pres_indicator" />
+                  <String fx:value="label_confirmation_DragDrop_no" />
+               </styleClass>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="388.046875" layoutY="194.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true">
+               <image>
+                  <Image url="@resources/grimper_draggrop.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Grimper" textAlignment="CENTER">
+               <stylesheets>
+                  <URL value="@resources/Atelier_Drag_Drop.css" />
+                  <URL value="@resources/Atelier_Trad.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="label-bright" />
+                  <String fx:value="Pres_indicator" />
+                  <String fx:value="label_confirmation_DragDrop_no" />
+               </styleClass>
+            </Label>
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" onMouseClicked="#handleTerminer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
    </children>
 </AnchorPane>

@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
@@ -17,13 +18,13 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="400.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane maxHeight="400.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.ConnexionOverviewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4760a9" height="402.0" layoutX="459.0" stroke="BLACK" strokeType="INSIDE" width="141.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <CubicCurve controlX1="286.0" controlX2="213.0" controlY1="109.79522705078125" controlY2="354.8099060058594" endX="461.0" endY="401.9999694824219" fill="#4760a9" startX="461.0" startY="-1.9073486328125E-6" stroke="BLACK" />
       <Group layoutX="25.0" layoutY="48.0">
          <children>
-            <Label layoutX="21.0" layoutY="143.0" stylesheets="@resources/Atelier_Drag_Drop.css" text="Prennez l'habitude d'apprendre !" />
+            <Label layoutX="21.0" layoutY="143.0" stylesheets="@resources/Atelier_Drag_Drop.css" text="Prenez l'habitude d'apprendre !" />
             <ImageView fitHeight="260.0" fitWidth="345.0" layoutX="-77.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@resources/ico_belingo.png" />
@@ -37,15 +38,15 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <TextField layoutX="10.0" layoutY="65.0" maxWidth="160.0" />
-                        <TextField layoutX="10.0" layoutY="104.0" maxWidth="160.0" />
                         <Label layoutX="180.0" layoutY="65.0" styleClass="label-white" stylesheets="@resources/Atelier_Drag_Drop.css" text="Identifiant :" />
                         <Label layoutX="180.0" layoutY="107.0" styleClass="label-white" stylesheets="@resources/Atelier_Drag_Drop.css" text="Mot de passe :" />
-                        <Button layoutX="20.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#handleConnexion" stylesheets="@resources/Atelier_Drag_Drop.css" text="Connexion" />
-                        <CheckBox layoutX="10.0" layoutY="138.0" mnemonicParsing="false" text="Se souvenir de moi" textFill="WHITE">
+                        <Button layoutX="20.0" layoutY="181.0" mnemonicParsing="false" onMouseClicked="#handleConnexion" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Connexion" />
+                        <CheckBox layoutX="10.0" layoutY="138.0" mnemonicParsing="false" styleClass="Pres_indicator" text="Se souvenir de moi" textFill="WHITE">
                            <font>
                               <Font size="11.0" />
                            </font>
                         </CheckBox>
+                        <PasswordField layoutX="10.0" layoutY="104.0" maxWidth="160.0" />
                      </children>
                   </AnchorPane>
             </content>
@@ -61,15 +62,15 @@
                               <Label layoutX="170.0" layoutY="72.0" styleClass="label-white" stylesheets="@resources/Atelier_Drag_Drop.css" text="Confirmation :" />
                               <Label layoutX="170.0" layoutY="107.0" styleClass="label-white" stylesheets="@resources/Atelier_Drag_Drop.css" text="E-mail :" />
                               <TextField prefHeight="26.0" prefWidth="160.0" stylesheets="@resources/Atelier_Drag_Drop.css" />
-                              <TextField layoutY="35.0" prefHeight="26.0" prefWidth="160.0" />
-                              <TextField layoutY="70.0" prefWidth="160.0" />
                               <TextField layoutY="105.0" prefWidth="160.0" />
                               <Button layoutX="10.0" layoutY="152.0" maxWidth="88.0" minWidth="88.0" mnemonicParsing="false" onMouseClicked="#handleConfirmer" stylesheets="@resources/Atelier_Drag_Drop.css" text="Confirmer">
                                  <styleClass>
-                                    <String fx:value="button" />
                                     <String fx:value="text" />
+                                    <String fx:value="Pres_indicator" />
                                  </styleClass>
                               </Button>
+                              <PasswordField layoutY="35.0" maxHeight="26.0" maxWidth="160.0" />
+                              <PasswordField layoutY="70.0" maxHeight="26.0" maxWidth="160.0" />
                            </children>
                         </Pane>
                      </children>

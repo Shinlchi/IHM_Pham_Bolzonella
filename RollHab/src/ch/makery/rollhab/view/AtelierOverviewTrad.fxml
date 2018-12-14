@@ -1,26 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="348.0" maxWidth="600.0" prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewTradController">
    <children>
-      <Pane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox layoutX="53.046875" layoutY="90.0" prefHeight="208.0" prefWidth="484.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css">
+            <Label layoutX="10.0" layoutY="10.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Traduisez cette phrase." AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <AnchorPane layoutX="30.0" layoutY="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
                <children>
-                  <FlowPane prefHeight="110.0" prefWidth="484.0" styleClass="flowpane" />
-                  <Separator prefWidth="200.0" stylesheets="@resources/Atelier_Drag_Drop.css" />
-                  <FlowPane prefHeight="87.0" prefWidth="487.0" />
+                  <GridPane maxWidth="600.0" prefWidth="400.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints fillWidth="false" halignment="CENTER" minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                      <ColumnConstraints minWidth="10.0" percentWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="I" />
+                        <Label text="am" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="Label_indicator" stylesheets="@resources/Atelier_Trad.css" text="taking" GridPane.columnIndex="2">
+                           <padding>
+                              <Insets left="2.0" right="2.0" />
+                           </padding>
+                        </Label>
+                        <Label text="a" GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="walk" GridPane.columnIndex="4">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="with" GridPane.columnIndex="5">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="my" GridPane.columnIndex="6">
+                           <GridPane.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="Label_indicator" stylesheets="@resources/Atelier_Trad.css" text="dog" GridPane.columnIndex="7">
+                           <GridPane.margin>
+                              <Insets left="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="." GridPane.columnIndex="8">
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets left="-2.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
                </children>
-            </VBox>
-            <Label layoutY="14.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Traduisez cette phrase." />
-            <Label layoutX="53.0" layoutY="57.0" text="Label" />
+            </AnchorPane>
+            <AnchorPane layoutX="60.0" layoutY="102.0" styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" percentHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label styleClass="separator" stylesheets="@resources/Atelier_Trad.css">
+                           <graphic>
+                              <Separator prefWidth="200.0" stylesheets="@resources/Atelier_Trad.css" />
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="separator" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
+                           <graphic>
+                              <Separator prefWidth="200.0" />
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="separator" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="2">
+                           <graphic>
+                              <Separator prefWidth="200.0" />
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="separator" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="3">
+                           <graphic>
+                              <Separator prefWidth="200.0" />
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="separator" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="4">
+                           <graphic>
+                              <Separator prefWidth="200.0" stylesheets="@resources/Atelier_Trad.css" />
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label styleClass="separator" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="5">
+                           <graphic>
+                              <Separator prefWidth="200.0" />
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-66.0" layoutY="227.0" styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="190.0">
+               <children>
+                  <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="56.0" percentHeight="0.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button fx:id="button" mnemonicParsing="false" onMouseDragged="#dragging" onMousePressed="#handle" stylesheets="@resources/Atelier_Trad.css">
+                           <GridPane.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="taking" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="button-lecon" />
+                              <String fx:value="Pres_indicator" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="button1" mnemonicParsing="false" onMouseDragged="#dragging1" onMousePressed="#handle" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text=" a walk" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="button-lecon" />
+                              <String fx:value="Pres_indicator" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="button2" mnemonicParsing="false" onMouseDragged="#dragging2" onMousePressed="#handle" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="I am" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="button-lecon" />
+                              <String fx:value="Pres_indicator" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="button3" mnemonicParsing="false" onMouseDragged="#dragging3" onMousePressed="#handle" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="3">
+                           <GridPane.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="dog" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="button-lecon" />
+                              <String fx:value="Pres_indicator" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="button4" mnemonicParsing="false" onMouseDragged="#dragging4" onMousePressed="#handle" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="4">
+                           <GridPane.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="my" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="button-lecon" />
+                              <String fx:value="Pres_indicator" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="button5" mnemonicParsing="false" onMouseDragged="#dragging5" onMousePressed="#handle" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="5">
+                           <GridPane.margin>
+                              <Insets left="7.0" right="7.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="with" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="button-lecon" />
+                              <String fx:value="Pres_indicator" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
          </children>
-      </Pane>
+      </AnchorPane>
+      <Button mnemonicParsing="false" onMouseClicked="#handleContinuer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
    </children>
 </AnchorPane>

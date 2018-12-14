@@ -1,21 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewQCMController">
    <children>
-      <Pane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Label layoutX="20.0" layoutY="25.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Quelle est la meilleur proposition ?" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button mnemonicParsing="false" onMouseClicked="#handleContinuer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <AnchorPane styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
          <children>
-            <Label layoutX="20.0" layoutY="25.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Quelle est la meilleur proposition ?" />
-            <Label layoutX="110.0" layoutY="79.0" styleClass="label-bright" stylesheets="@resources/Atelier_Drag_Drop.css" text="Label" />
-            <Button layoutX="159.0" layoutY="185.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
-            <Button layoutX="159.0" layoutY="251.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
-            <Button layoutX="344.0" layoutY="185.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
-            <Button layoutX="344.0" layoutY="251.0" mnemonicParsing="false" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" text="Button" />
+            <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" percentHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="I am">
+                     <GridPane.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
+                     <graphic>
+                        <Separator prefWidth="200.0">
+                           <padding>
+                              <Insets bottom="-12.0" left="2.0" right="2.0" />
+                           </padding>
+                        </Separator>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="a walk" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="with" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="my" GridPane.columnIndex="4">
+                     <GridPane.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="dog." GridPane.columnIndex="5">
+                     <GridPane.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
          </children>
-      </Pane>
+      </AnchorPane>
+      <AnchorPane stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="60.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css">
+                     <graphic>
+                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="taking" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="button-QCM" />
+                        <String fx:value="Pres_indicator" />
+                        <String fx:value="label_confirmation_QCM_yes" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
+                     <graphic>
+                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="have" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="button-QCM" />
+                        <String fx:value="Pres_indicator" />
+                        <String fx:value="label_confirmation_QCM_no" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css" GridPane.rowIndex="1">
+                     <graphic>
+                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="less" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="button-QCM" />
+                        <String fx:value="Pres_indicator" />
+                        <String fx:value="label_confirmation_QCM_no" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <graphic>
+                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="take" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="button-QCM" />
+                        <String fx:value="Pres_indicator" />
+                        <String fx:value="label_confirmation_QCM_no" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
