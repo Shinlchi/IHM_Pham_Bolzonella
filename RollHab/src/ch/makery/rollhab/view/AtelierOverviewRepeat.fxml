@@ -12,8 +12,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewRepeatController">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewRepeatController">
    <children>
       <Label layoutX="5.0" layoutY="5.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Ecoutez et répétez." AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
       <VBox layoutX="30.0" layoutY="61.0" prefHeight="180.0" prefWidth="200.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css">
@@ -41,8 +42,9 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <ProgressBar prefWidth="150.0" progress="0.2" stylesheets="@resources/AtelierLayout.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" styleClass="Pres_indicator">
+                        <MediaView fx:id="mv" fitHeight="20.0" fitWidth="20.0" />
+                        <ProgressBar fx:id="progressBar" prefWidth="150.0" progress="0.0" stylesheets="@resources/AtelierLayout.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#handleSound" pickOnBounds="true" styleClass="Pres_indicator">
                            <image>
                               <Image url="@resources/sound_icon.png" />
                            </image>

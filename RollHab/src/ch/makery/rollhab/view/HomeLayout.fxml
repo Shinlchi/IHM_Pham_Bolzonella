@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="52.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.HomeLayoutController">
+<AnchorPane prefHeight="52.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.HomeLayoutController">
    <children>
       <GridPane styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -78,7 +78,7 @@
                <items>
                   <MenuItem mnemonicParsing="false" text="Daniel" />
                   <MenuItem mnemonicParsing="false" text="Guillaume" />
-                  <MenuItem mnemonicParsing="false" text="Mathieu" />
+                  <MenuItem mnemonicParsing="false" text="Matthieu" />
                   <MenuItem mnemonicParsing="false" text="Sophie" />
                </items>
             </MenuButton>

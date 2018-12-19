@@ -4,22 +4,21 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewQCMController">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewQCMController">
    <children>
       <Label layoutX="20.0" layoutY="25.0" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Quelle est la meilleur proposition ?" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-      <Button mnemonicParsing="false" onMouseClicked="#handleContinuer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="buttonContinu" mnemonicParsing="false" onMouseClicked="#handleContinuer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <AnchorPane styleClass="pane" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
          <children>
-            <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+            <GridPane fx:id="gridpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
                <columnConstraints>
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" percentWidth="0.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" />
@@ -34,17 +33,16 @@
                         <Insets left="2.0" right="2.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
-                     <graphic>
-                        <Separator prefWidth="200.0">
-                           <padding>
-                              <Insets bottom="-12.0" left="2.0" right="2.0" />
-                           </padding>
-                        </Separator>
-                     </graphic>
+                  <Label fx:id="labelgridpane" styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="___" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
+                     <padding>
+                        <Insets left="3.0" right="3.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </Label>
                   <Label styleClass="label_QCM" stylesheets="@resources/Atelier_Trad.css" text="a walk" GridPane.columnIndex="2">
                      <GridPane.margin>
@@ -82,44 +80,40 @@
                   <RowConstraints minHeight="60.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css">
+                  <Button fx:id="button1" mnemonicParsing="false" onMouseClicked="#handleLabel1" stylesheets="@resources/Atelier_Trad.css">
                      <graphic>
-                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="taking" />
+                        <Label fx:id="label1" styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="taking" />
                      </graphic>
                      <styleClass>
                         <String fx:value="button-QCM" />
                         <String fx:value="Pres_indicator" />
-                        <String fx:value="label_confirmation_QCM_yes" />
                      </styleClass>
                   </Button>
-                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
+                  <Button fx:id="button2" mnemonicParsing="false" onMouseClicked="#handleLabel2" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1">
                      <graphic>
-                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="have" />
+                        <Label fx:id="label2" styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="have" />
                      </graphic>
                      <styleClass>
                         <String fx:value="button-QCM" />
                         <String fx:value="Pres_indicator" />
-                        <String fx:value="label_confirmation_QCM_no" />
                      </styleClass>
                   </Button>
-                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css" GridPane.rowIndex="1">
+                  <Button fx:id="button3" mnemonicParsing="false" onMouseClicked="#handleLabel3" stylesheets="@resources/Atelier_Trad.css" GridPane.rowIndex="1">
                      <graphic>
-                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="less" />
+                        <Label fx:id="label3" styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="less" />
                      </graphic>
                      <styleClass>
                         <String fx:value="button-QCM" />
                         <String fx:value="Pres_indicator" />
-                        <String fx:value="label_confirmation_QCM_no" />
                      </styleClass>
                   </Button>
-                  <Button mnemonicParsing="false" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button fx:id="button4" mnemonicParsing="false" onMouseClicked="#handleLabel4" stylesheets="@resources/Atelier_Trad.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <graphic>
-                        <Label styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="take" />
+                        <Label fx:id="label4" styleClass="button_label_for_mouve" stylesheets="@resources/Atelier_Trad.css" text="take" />
                      </graphic>
                      <styleClass>
                         <String fx:value="button-QCM" />
                         <String fx:value="Pres_indicator" />
-                        <String fx:value="label_confirmation_QCM_no" />
                      </styleClass>
                   </Button>
                </children>

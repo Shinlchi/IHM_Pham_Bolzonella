@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="360.0" prefWidth="180.0" stylesheets="@resources/ToolsLayout.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
+<AnchorPane prefHeight="360.0" prefWidth="180.0" stylesheets="@resources/ToolsLayout.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.Controller">
    <children>
       <Button layoutX="5.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#handleToolsVerbes" prefHeight="50.0" prefWidth="170.0" styleClass="shiny-orange" stylesheets="@resources/ToolsLayout.css" text="Verbes irréguliers" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
          <font>

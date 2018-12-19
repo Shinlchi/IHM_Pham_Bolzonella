@@ -4,71 +4,65 @@ package ch.makery.rollhab.view;
 import ch.makery.rollhab.MainApp;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
 public class AtelierOverviewDragDropController {
 	// Reference to the main application.
 	private MainApp mainApp;
+	private double startDragX;
+	private double startDragY;
 	@FXML
 	private Button button;
+	@FXML 
+	private Button buttonContinu;
+	@FXML
+	private Label labelAnswer;
 
+	public AtelierOverviewDragDropController() {}
 
-    private double startDragX;
-    private double startDragY;
-	/**
-	 * The constructor.
-	 * The constructor is called before the initialize() method.
-	 */
-	public AtelierOverviewDragDropController() {
+	public void initialize() {
+		buttonContinu.setVisible(false);
 	}
 
-	/**
-	 * Initializes the controller class. This method is automatically called
-	 * after the fxml file has been loaded.
-	 */
-    public void initialize() {
 
-    }
-
-	/**
-	 * Is called by the main application to give a reference back to itself.
-	 * 
-	 * @param mainApp
-	 */
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
 	}
 
-	/**
-	 * Called when the user clicks the connexion button. Opens a overview.
-	 */
-	/*@FXML
-	public void handleContinuer()
+	@FXML
+	public void handleAnswer()
 	{
-		mainApp.showHomeLayout();
-		mainApp.showHomeOverview();
-	}*/
+		labelAnswer.getStyleClass().removeAll(); 
+		labelAnswer.getStyleClass().add("label_confirmation_DragDrop_Rest");
+		buttonContinu.setVisible(true);
+	}
 	@FXML
 	public void handleTerminer()
 	{
-		
 		mainApp.showAtelierOverviewEnd();
 	}
 	@FXML
-	 public void handle(MouseEvent event)
-	 
-	 	    {
-	 
-	     
-	            startDragX = event.getSceneX();
-	            startDragY = event.getSceneY();
-	        }
-@FXML
-	 public void dragging(MouseEvent event) {
-	       		
-	            button.setTranslateX(event.getSceneX() - startDragX);
-	            button.setTranslateY(event.getSceneY() - startDragY);
-	            
-	 	    }
+	public void handle(MouseEvent event)
 
+	{
+
+
+		startDragX = event.getSceneX();
+		startDragY = event.getSceneY();
+	}
+	@FXML
+	public void dragging(MouseEvent event) {
+
+		button.setTranslateX(event.getSceneX() - startDragX);
+		button.setTranslateY(event.getSceneY() - startDragY);
+
+	}
+	@FXML
+	public void onLabelDroped(MouseEvent event)
+	{
+		button.setTranslateX(0);
+		button.setTranslateY(0);
+		// Work in progress
+	}
 }

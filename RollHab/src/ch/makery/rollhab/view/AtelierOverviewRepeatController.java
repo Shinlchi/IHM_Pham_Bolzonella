@@ -1,26 +1,28 @@
 package ch.makery.rollhab.view;
+import java.io.File;
 
 import ch.makery.rollhab.MainApp;
 import javafx.fxml.FXML;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaPlayer.Status;
+import javafx.scene.media.MediaView;
 
 public class AtelierOverviewRepeatController {
 	// Reference to the main application.
 	private MainApp mainApp;
 
-	/**
-	 * The constructor.
-	 * The constructor is called before the initialize() method.
-	 */
+	@FXML
+	private MediaView mv;
+	private MediaPlayer mp;
+	private Media me;
 	public AtelierOverviewRepeatController() {
 	}
 
-	/**
-	 * Initializes the controller class. This method is automatically called
-	 * after the fxml file has been loaded.
-	 */
 	@FXML
 	private void initialize() {
-		
+
+
 	}
 
 	/**
@@ -40,5 +42,10 @@ public class AtelierOverviewRepeatController {
 	{
 		mainApp.showAtelierOverviewTrad();
 	}
-	
+
+	@FXML
+	public void handleSound() {
+		
+	}
+
 }
