@@ -145,6 +145,13 @@
 -fx-border-color:white;
 -fx-effect: innershadow( gaussian, rgba( 0, 0, 0, 0.5 ), 10, 0, 0, 0 );
 }
+
+.pane-trad:hover, focused{
+-fx-border-width:3px;
+-fx-border-style: solid;
+-fx-background-color:white;
+-fx-border-color:black;
+}
 .pane-home{
 -fx-border-width:3px;
 

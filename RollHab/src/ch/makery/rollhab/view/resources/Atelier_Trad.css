@@ -41,21 +41,32 @@
 	-fx-font-size: 14pt;
 	
 }
+.label_trad_blue{
+	-fx-font-size: 14pt;
+	 -fx-text-fill: #5542AA;
+}
 
-.label_confirmation_QCM_yes:pressed {
+.label_confirmation_QCM_yes {
     -fx-background-color: #1cb61d;
     -fx-text-fill: white;
 
     
 }
 
-.label_confirmation_QCM_no:pressed {
+.label_confirmation_QCM_no {
     -fx-background-color: #ff2727;
     -fx-text-fill: white;
     
 }
 
 .label_confirmation_DragDrop_yes:pressed {
+    -fx-background-color: #1cb61d;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    
+}
+
+.label_confirmation_DragDrop_Rest {
     -fx-background-color: #1cb61d;
     -fx-text-fill: white;
     -fx-background-radius: 10;

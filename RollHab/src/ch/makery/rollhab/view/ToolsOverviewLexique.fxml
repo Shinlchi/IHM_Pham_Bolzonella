@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/ToolsLayout.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.ToolsOverviewLexiqueController">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" stylesheets="@resources/ToolsLayout.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.ToolsOverviewLexiqueController">
 	<children>
       <TabPane layoutX="46.0" layoutY="14.0" prefWidth="420.0" stylesheets="@resources/ToolsLayout.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>

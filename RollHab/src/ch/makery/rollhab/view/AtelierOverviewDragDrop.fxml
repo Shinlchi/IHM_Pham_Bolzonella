@@ -2,6 +2,7 @@
 
 <?import java.lang.String?>
 <?import java.net.URL?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -9,10 +10,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="348.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewDragDropController">
+<AnchorPane prefHeight="348.0" prefWidth="600.0" styleClass="background" stylesheets="@resources/Atelier_Drag_Drop.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.rollhab.view.AtelierOverviewDragDropController">
    <children>
       <Label layoutX="0.046875" nodeOrientation="LEFT_TO_RIGHT" styleClass="label-consigne" stylesheets="@resources/Atelier_Drag_Drop.css" text="Trouvez l'image correspondant au mot." textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-      <Button fx:id="button" mnemonicParsing="false" onMouseDragged="#dragging" onMousePressed="#handle" styleClass="button-lecon" stylesheets="@resources/Atelier_Trad.css" AnchorPane.leftAnchor="247.0" AnchorPane.topAnchor="170.0">
+      <Button fx:id="button" mnemonicParsing="false" onMouseDragged="#dragging" onMousePressed="#handle" onMouseReleased="#onLabelDroped" styleClass="button-lecon" stylesheets="@resources/Atelier_Trad.css" AnchorPane.leftAnchor="247.0" AnchorPane.topAnchor="170.0">
          <graphic>
             <Label stylesheets="@resources/Atelier_Trad.css" text="walk">
                <styleClass>
@@ -40,14 +41,17 @@
                </styleClass>
             </Label>
          </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
       </VBox>
-      <VBox alignment="TOP_CENTER" layoutX="70.046875" layoutY="194.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="200.0">
+      <VBox alignment="TOP_CENTER" layoutX="70.046875" layoutY="194.0" onMouseClicked="#handleAnswer" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="200.0">
          <children>
             <ImageView fitHeight="110.0" fitWidth="130.0" pickOnBounds="true">
                <image>
                   <Image url="@resources/marcher_dragdrop.jpg" />
                </image></ImageView>
-            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Marcher" textAlignment="CENTER">
+            <Label fx:id="labelAnswer" alignment="CENTER" contentDisplay="CENTER" maxWidth="130.0" text="Marcher" textAlignment="CENTER">
                <stylesheets>
                   <URL value="@resources/Atelier_Drag_Drop.css" />
                   <URL value="@resources/Atelier_Trad.css" />
@@ -59,6 +63,9 @@
                </styleClass>
             </Label>
          </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
       </VBox>
       <VBox alignment="TOP_CENTER" layoutX="388.046875" layoutY="38.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="50.0">
          <children>
@@ -78,6 +85,9 @@
                </styleClass>
             </Label>
          </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
       </VBox>
       <VBox alignment="TOP_CENTER" layoutX="388.046875" layoutY="194.0" prefHeight="130.0" prefWidth="100.0" styleClass="vbox" stylesheets="@resources/Atelier_Drag_Drop.css" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="200.0">
          <children>
@@ -98,7 +108,10 @@
                </styleClass>
             </Label>
          </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
       </VBox>
-      <Button mnemonicParsing="false" onMouseClicked="#handleTerminer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="buttonContinu" mnemonicParsing="false" onMouseClicked="#handleTerminer" styleClass="Pres_indicator" stylesheets="@resources/Atelier_Drag_Drop.css" text="Continuez" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
    </children>
 </AnchorPane>
